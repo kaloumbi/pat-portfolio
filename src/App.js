@@ -1,8 +1,8 @@
-import Home from "./pages/Home.js";
-import About from "./pages/About.js";
-import Contact from "./pages/Contact.js";
-import Projects from "./pages/Projects.js";
-import Skills from "./pages/Skills.js";
+import Home from "../src/pages/Home.js";
+import About from "../src/pages/About.js";
+import Contact from "../src/pages/Contact.js";
+import Projects from "../src/pages/Projects.js";
+import Skills from "../src/pages/Skills.js";
 import "./assets/css/main.css";
 import "./assets/css/about.css";
 import "./assets/css/projects.css";

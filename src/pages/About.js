@@ -1,6 +1,6 @@
-import imgPath from "../assets/images/kaloumbi.png";
+import imgPath from '../assets/images/kaloumbi.png';
 
-export default function Contact() {
+export default function About() {
   return `
     <section class="about-section">
       <div class="container">
