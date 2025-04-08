@@ -1,0 +1,182 @@
+/* Général */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #0d1117;
+  color: #fff;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: #333;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.header h1 {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.header .home {
+  background-color: #4acfee;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: #4acfee;
+  border-radius: 2px;
+}
+
+/* Corps de la page */
+.inner {
+  padding-top: 25rem;
+  padding-bottom: 2rem;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Container des skills */
+.container-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 5vw;
+}
+
+/* Skill Box */
+.skill-box {
+  background-color: #1c1f26;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(74, 207, 238, 0.3);
+}
+
+/* Titre */
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.skill-title::after,
+.skill-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #4acfee;
+  transition: width 0.5s ease;
+}
+
+.skill-title::after {
+  right: 50%;
+}
+
+.skill-title::before {
+  left: 50%;
+}
+
+.skill-box:hover .skill-title::after,
+.skill-box:hover .skill-title::before {
+  width: 35px;
+}
+
+.skill-title h3 {
+  margin-top: 0.5rem;
+  color: #4acfee;
+  font-size: 1.1rem;
+}
+
+/* Image / Icône */
+.img {
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+.img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(100, 100, 100, 0.4);
+  border-radius: 45px 0 0 45px;
+}
+
+.skill-icon {
+  width: 50px;
+  z-index: 2;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .container-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-skills {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+}
