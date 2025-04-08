@@ -25,16 +25,16 @@ export default function Home() {
             <a class="active" href="#" id="home-link">Home</a>
           </li>
           <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <a href="#" id="about-link">About</a>
+            <a href="#about" id="about-link">About</a>
           </li>
           <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <a href="#" id="projects-link">Projects</a>
+            <a href="#projects" id="projects-link">Projects</a>
           </li>
           <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-            <a href="#" id="skills-link">Skills</a>
+            <a href="#skills" id="skills-link">Skills</a>
           </li>
           <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-            <a href="#" id="contact-link">Contact</a>
+            <a href="#contact" id="contact-link">Contact</a>
           </li>
         </ul>
       </nav>
