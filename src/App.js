@@ -10,21 +10,21 @@ import "./assets/css/skills.css";
 import "./assets/css/contact.css";
 
 export default function App() {
-  const hash = window.location.hash;
+  const path = window.location.pathname;
 
-  if (hash.includes("about")) {
+  if (path.includes("About.html")) {
     return About();
   }
 
-  if (hash.includes("projects")) {
+  if (path.includes("Projects.html")) {
     return Projects();
   }
 
-  if (hash.includes("skills")) {
+  if (path.includes("Skills.html")) {
     return Skills();
   }
 
-  if (hash.includes("contact")) {
+  if (path.includes("Contact.html")) {
     return Contact();
   }
 
